@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>原生js实现全屏滚动</title>
+    <link rel="stylesheet" type="text/css" href="../css/qfm_cv_icon.css">
+    <link rel="stylesheet" type="text/css" href="../css/qfm_cv_animate.css">
+    <link rel="stylesheet" type="text/css" href="../css/jsFullPage.css">
+</head>
+<body>	
+	<div id="wrap">
+		<!-- 页面导航 -->
+		<div id="page_nav">
+			<ul>
+				<li><a class="active"><span></span></a></li>
+				<li><a class=""><span></span></a></li>
+				<li><a class=""><span></span></a></li>
+				<li><a class=""><span></span></a></li>
+				<li><a class=""><span></span></a></li>
+				<li><a class=""><span></span></a></li>
+			</ul>
+		</div>
+	    <div id="main">
+	    	<!-- 基本信息 -->
+	        <div id="basic_info" class="page">
+	        	<div class="tableCell">
+	        		<img alt="" src="../img/1.jpg" class="portrait">
+		        	<h1 class="name">邱凤鸣</h1>
+		        	<p class="motto">看自己喜欢的-学自己喜欢的-做自己喜欢的</p>
+			    	<h3 class="post">web前端开发工程师</h3>
+			    	<p class="phone">13920025089</p>
+			    	<p class="email">		    		
+			    		<a href="javascript: void(0);" title="878189687@qq.com">
+			    			<span class="qfm_icon qfm_icon_email"></span>
+			    			878189687@qq.com
+			    		</a>
+			    	</p>
+	        	</div>
+	        </div>
+	        <!-- 项目经验 -->
+	        <div id="project" class="page">
+	        	<div class="tableCell">
+	        		<h1>项目经验</h1>
+			    	<ul>
+			    		<li id="energy" class="item">
+			    			<div class="icon">
+			    				<label><span class="qfm_icon qfm_icon_analy"></span></label>		    				
+			    			</div>
+			    			<h2 class="name"><a>株洲市城市建设管理及公共信息平台</a></h2>
+			    			<div class="img">
+			    				<img alt="" src="../img/2.png">
+			    			</div>
+			    		</li>
+			    		<li id="xindu" class="item">
+			    			<div class="icon">
+			    				<label><span class="qfm_icon qfm_icon_analy"></span></label>
+			    			</div>
+			    			<h3 class="name"><a>功夫中国</a></h3>
+			    			<div class="img">
+			    				<img alt="" src="../img/3.png">
+			    			</div>
+			    			<p class="website">
+			    				<a href="http://www.chinakung.com/" target="_blank">http://www.chinakung.com/</a>
+			    			</p>
+			    		</li>
+			    	</ul>
+	        	</div>
+	        </div>
+	        <!-- 专业技能 -->
+	        <div id="skill" class="page">
+	        	<div class="tableCell">
+	        		<h1>专业技能</h1>
+		        	<div class="row">
+		        		<label>HTML(5)</label>
+		        		<label>CSS(3)</label>
+		        		<label>Less</label>
+		        	</div>
+		        	<div class="row">
+		        		<label>JavaScript</label>
+		        		<label>jQuery</label>
+		        		<label>ajax</label>     		
+		        	</div>
+		        	<div class="row">
+		        		<label>Bootstrap</label>
+		        		<label>jQuery-easyUI</label>
+		        		<label>eCharts</label>	        		
+		        	</div>
+		        	<div class="row">
+		        		<label>Eclipse</label>
+		        		<label>sublime</label>
+		        		<label>Axure</label>
+		        		<label>Photoshop</label>
+		        	</div>
+	        	</div>
+	        </div>
+	        <!-- 教育背景 -->
+	        <div id="education" class="page">
+	        	<div class="tableCell">	
+		        	<div class="content">
+		        		<h1>教育背景</h1>
+			        	<h2 class="university">天津工业大学</h2>
+			        	<p class="time">2012-09~2016-06</p>
+			        	<p class="major">电子与信息工程学院-生物医学工程</p>
+			        	<p class="certificate">
+			        		<span>2015年3月  全国计算机二级</span><br>
+			        		<span>2014年12月  全国大学生英语四级</span>
+			        	</p>
+		        	</div>
+		        	<div class="draw_bg">
+		        		<span class="bg_1"></span>
+		        		<span class="bg_2"></span>
+		        		<span class="bg_3"></span>
+		        		<span class="bg_4"></span>
+		        		<span class="bg_5"></span>
+		        		<span class="bg_6"></span>
+		        		<span class="bg_7"></span>
+		        	</div>
+	        	</div>
+	        </div>
+	        <!-- 工作经历 -->
+	        <div id="workExper" class="page">
+	        	<div class="tableCell">
+	        		<h1>工作经历</h1>
+	        		<p class="time">2015年12月-2017年9月</p>
+		        	<p class="company">天津天地伟业科技有限公司</p>
+		        	<p class="position">web前端开发工程师</p>
+	        	</div>
+	        </div>
+	        <!-- 自我评价 -->
+	        <div id="evaluate" class="page">
+	        	<div class="tableCell">
+	        		<h1>自我评价</h1>
+	        		<p>看自己喜欢的-学自己喜欢的-做自己喜欢的</p>
+	        		<p>我喜欢<font>团队</font>协同<font>合作</font>，不喜欢单打独斗</p>
+	        		<p>我虽学的不是软件相关专业，但无法阻止我去了解它、学习它</p>
+	        		<p>我的知识系统或许不完美，但不影响去努力解决问题</p>
+	        		<p>我熟悉的框架或许不够前沿，但只要需要我必会将其收入囊中</p>
+	        		<p>虽然各种前端框架不断涌出，但我坚信学好基础知识是一切进步的基础</p>
+	        		<p class="free">空闲下来时，或许我会学习一些新东西</p>
+	        		<p class="free">或许会学习别人的代码</p>
+	        		<p class="free">或许会写一些小东西</p>
+	        		<p class="free">也会学习基础的、原生的知识</p>
+	        		<p>我不会让自己停止不前，更不会让自己倒退</p>
+	        	</div>
+	        </div>
+	    </div>
+	</div>
+	<div id="showEnergy">
+		<div class="box">
+			<ul>
+				<li><img src="../img/9.png"></li>
+			</ul>
+		</div>
+	</div>
+	
+    <!-- <script type="text/javascript" src="../js/jsFullPage.js"></script> -->
+    <script type="text/javascript" src="../js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="../js/qfm_cv.js"></script>
+    <script type="text/javascript">
+		if(window.screen.width>=1200){
+			document.write('<script type="text/javascript" src="../js/jsFullPage.js"><\/script>');
+		} 
+	</script>
+</body>
+	
+</html>

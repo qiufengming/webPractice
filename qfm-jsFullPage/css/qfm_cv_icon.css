@@ -1,0 +1,188 @@
+.qfm_icon{
+	font-size: 10px;
+	display: inline-block;
+	box-sizing: border-box;
+	position: relative;
+}
+.qfm_icon:before{
+	font-size: 10px;
+	content: '';
+	position: absolute;
+}
+.qfm_icon:after{
+	font-size: 10px;
+	content: '';
+	position: absolute;
+}
+
+.qfm_icon_email{
+	width: 30px;
+	height: 20px;
+	background-color: #333;
+	overflow: hidden;
+}
+.qfm_icon_email:before{
+	width: 24px;
+	height: 24px;
+	box-sizing: border-box;
+	border: 2px solid #fff;
+	background-color: #333;
+	transform: rotate(45deg);
+	left: 3px;
+	top: 8px;
+}
+.qfm_icon_email:after{
+	width: 24px;
+	height: 24px;
+	box-sizing: border-box;
+	border: 2px solid #fff;
+	background-color: #333;
+	transform: rotate(45deg);
+	left: 3px;
+	top: -12px;
+}
+
+.qfm_icon_analy{
+	font-size: 18px;
+	width: 3em;
+	height: 3em;
+	border-style: solid;
+	border-color: #fff;
+	border-left-width: 0.4em;
+	border-bottom-width: 0.4em;
+	border-top: none;
+	border-right: none;
+	
+	background-image: linear-gradient(45deg,rgba(0,0,0,0) 50%,#fff 50%);
+	background-repeat: no-repeat;
+	background-size: 0.8em 0.8em;
+	background-position: 1.6em 0.4em;
+}
+.qfm_icon_analy:before{
+	font-size: 18px;
+	width: 0.4em;
+	height: 1.2em;
+	background-color: #fff;
+	bottom: 0.2em;
+	left: 0.4em;
+	-webkit-transform: rotate(35deg);
+	-moz-transform: rotate(35deg);
+	-o-transform: rotate(35deg);
+	-ms-transform: rotate(35deg);
+	transform: rotate(35deg);
+	box-shadow: 0.6em -1.2em #fff;
+	-webkit-box-shadow:  0.6em -1.2em #fff;
+	-moz-box-shadow:  0.6em -1.2em #fff;
+}
+.qfm_icon_analy:after{
+	font-size: 18px;
+	width: 0.4em;
+	height: 1em;
+	background-color: #fff;
+	bottom: 0.5em;
+	left: 0.9em;
+	-webkit-transform: rotate(-55deg);
+	-moz-transform: rotate(-55deg);
+	-o-transform: rotate(-55deg);
+	-ms-transform: rotate(-55deg);
+	transform: rotate(-55deg);
+}
+/*教育背景-背景图*/
+#education .bg_1{
+	left: 10px;
+	top: 100px;
+	width: 0;
+    height: 0;
+    border-width: 100px;
+    border-color: rgba(255,255,255,.3) transparent transparent transparent;
+    border-style: solid dashed dashed dashed;
+    transform: rotate(30deg) skew(10deg,10deg);
+	-ms-transform: rotate(30deg) skew(10deg,10deg); 	/* IE 9 */
+	-moz-transform: rotate(30deg) skew(10deg,10deg); 	/* Firefox */
+	-webkit-transform: rotate(30deg) skew(10deg,10deg); /* Safari 和 Chrome */
+	-o-transform: rotate(30deg) skew(10deg,10deg); 	/* Opera */
+}
+#education .bg_2{
+	left: 20%;
+	top: 25%;
+	width: 210px;
+	height: 130px;
+	background-color: rgba(255,255,255,.3);
+	
+	transform: rotate(70deg) skew(10deg,10deg);
+	-ms-transform: rotate(70deg) skew(10deg,10deg); 	
+	-moz-transform: rotate(70deg) skew(10deg,10deg); 	
+	-webkit-transform: rotate(70deg) skew(10deg,10deg);
+	-o-transform: rotate(70deg) skew(10deg,10deg);
+}
+#education .bg_3{
+	right: 0;
+	bottom: 0px;
+	width: 100px;
+	height: 130px;
+	background-color: rgba(255,255,255,.3);
+	
+	transform: rotate(100deg) skew(46deg,10deg);
+	-ms-transform: rotate(100deg) skew(46deg,10deg); 	
+	-moz-transform: rotate(100deg) skew(46deg,10deg); 	
+	-webkit-transform: rotate(100deg) skew(46deg,10deg);
+	-o-transform: rotate(100deg) skew(46deg,10deg);
+}
+#education .bg_4{
+	left: 50%;
+	top: 50%;
+	width: 0;
+    height: 0;
+    border-width: 220px;
+    border-color: rgba(255,255,255,.3) transparent transparent transparent;
+    border-style: solid dashed dashed dashed;
+    transform: rotate(30deg) skew(10deg,10deg);
+	-ms-transform: rotate(30deg) skew(10deg,10deg); 	/* IE 9 */
+	-moz-transform: rotate(30deg) skew(10deg,10deg); 	/* Firefox */
+	-webkit-transform: rotate(30deg) skew(10deg,10deg); /* Safari 和 Chrome */
+	-o-transform: rotate(30deg) skew(10deg,10deg); 	/* Opera */
+}
+#education .bg_5{
+	left: 70%;
+	top: 10%;
+	width: 0;
+    height: 0;
+    border-width: 190px;
+    border-color: rgba(255,255,255,.3) transparent transparent transparent;
+    border-style: solid dashed dashed dashed;
+    transform: rotate(30deg) skew(10deg,10deg);
+	-ms-transform: rotate(30deg) skew(10deg,10deg); 	/* IE 9 */
+	-moz-transform: rotate(30deg) skew(10deg,10deg); 	/* Firefox */
+	-webkit-transform: rotate(30deg) skew(10deg,10deg); /* Safari 和 Chrome */
+	-o-transform: rotate(30deg) skew(10deg,10deg); 	/* Opera */
+}
+#education .bg_6{
+	left: 22%;
+	top: 28%;
+	width: 0;
+    height: 0;
+    border-width: 190px;
+    border-color: rgba(255,255,255,.3) transparent transparent transparent;
+    border-style: solid dashed dashed dashed;
+    transform: rotate(30deg) skew(10deg,10deg);
+	-ms-transform: rotate(30deg) skew(10deg,10deg); 	/* IE 9 */
+	-moz-transform: rotate(30deg) skew(10deg,10deg); 	/* Firefox */
+	-webkit-transform: rotate(30deg) skew(10deg,10deg); /* Safari 和 Chrome */
+	-o-transform: rotate(30deg) skew(10deg,10deg); 	/* Opera */
+}
+#education .bg_7{
+	right: 60%;
+	bottom: 0px;
+	width: 100px;
+	height: 130px;
+	background-color: rgba(255,255,255,.3);
+	
+	transform: rotate(100deg) skew(46deg,10deg);
+	-ms-transform: rotate(100deg) skew(46deg,10deg); 	
+	-moz-transform: rotate(100deg) skew(46deg,10deg); 	
+	-webkit-transform: rotate(100deg) skew(46deg,10deg);
+	-o-transform: rotate(100deg) skew(46deg,10deg);
+}
+
+
+

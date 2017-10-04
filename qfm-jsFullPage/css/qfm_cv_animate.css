@@ -1,0 +1,77 @@
+/**
+ * 鼠标移动到页面导航点上，显示tooltip
+ */
+@-webkit-keyframes qfmFade {
+    0%,20%,40%,60%,100% {
+        -webkit-transition-timing-function: cubic-bezier(0,0,0,0);
+        transition-timing-function: cubic-bezier(0,0,0,0);
+    }
+
+    0% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 0.2;
+    }
+
+    40% {
+    	opacity: 0.4;
+    }
+
+    60% {
+    	opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes qfmFade {
+    0%,20%,40%,60%,100% {
+        -webkit-transition-timing-function: cubic-bezier(0,0,0,0);
+        transition-timing-function: cubic-bezier(0,0,0,0);
+    }
+
+    0% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 0.2;
+    }
+
+    40% {
+    	opacity: 0.4;
+    }
+
+    60% {
+    	opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+/**
+ * 旋转360度
+ */
+@-webkit-keyframes qfmRotate{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+@keyframes qfmRotate{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+

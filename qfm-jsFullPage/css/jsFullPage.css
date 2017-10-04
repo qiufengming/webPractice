@@ -1,0 +1,428 @@
+*{
+	box-sizing: border-box;
+}
+body,ul,li,a,div{
+	padding:0px; margin:0px; font-size:14px;
+}
+html,body{
+	width: 100%;
+    height:100%;
+    font-family: '微软雅黑','Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+li{
+	list-style-type: none;
+}
+a{
+	text-decoration: none;
+}
+/* h1,h2,h3,h4,h5,h6{
+	padding: 0;
+	margin: 0;
+}  */
+
+#wrap{
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+#main{
+    top: 0;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    
+}
+#main .page{
+    width:100%;
+    margin:0;
+    /* padding: 50px; */
+    margin: 0;
+    text-align: center;
+    color: #fff;
+    display: table;
+    vertical-align: middle;
+    overflow: hidden;
+    position: relative;
+}
+#main .tableCell{
+	width:100%;
+	height: 100%;	
+    display: table-cell;
+    vertical-align: middle;
+}
+#main .page h1{
+	font-size: 50px;
+	margin-top: 0;
+	margin-bottom: 10px;
+}
+/**
+ * 页面导航
+ */
+#page_nav{
+	width: 30px;
+	height: 140px;
+	position: fixed;
+	top: 40%;
+	left: 20px;
+	z-index: 5;
+}
+#page_nav ul{
+	width: 100%;
+	height: 100%;
+	padding: 1px 8px;
+}
+#page_nav li{
+	width: 14px;
+	height: 14px;
+	margin: 7px auto;
+}
+#page_nav a{
+	display: block;
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+	position: relative;
+}
+#page_nav span{
+	display: block;
+	width: 8px;
+	height: 8px;
+	border: 1px solid #333;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	margin: auto;
+}
+#page_nav a.active span{
+	background-color: #333;
+}
+#page_nav a:hover span:before{
+	content:"";
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-top: 6px solid transparent;
+	/* border-right: 12px solid rgba(245,35,12,1); */
+	border-right: 12px solid transparent;
+	border-bottom: 6px solid transparent;
+	top: -3px;
+	left: 9px;
+	-webkit-animation: qfmFade 0.3s;
+	animation: qfmFade 0.3s;
+}
+#page_nav a:hover span:after{
+	content:"";
+	position: absolute;
+	width: 80px;
+	height: 30px;
+	/* background-color: rgba(245,35,12,1); */
+	top: -12px;
+	left: 15px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-o-border-radius: 5px;
+	border-radius: 5px;
+	color: #fff;
+	text-align: center;
+	line-height: 30px;
+	-webkit-animation: qfmFade 1s;
+	animation: qfmFade 1s;
+}
+#page_nav li:nth-child(1) a:hover span:after{
+	content:"基本信息";
+}
+#page_nav li:nth-child(2) a:hover span:after{
+	content:"项目经验";
+}
+#page_nav li:nth-child(3) a:hover span:after{
+	content:"专业技能";
+}
+#page_nav li:nth-child(4) a:hover span:after{
+	content:"教育背景";
+}
+#page_nav li:nth-child(5) a:hover span:after{
+	content:"工作经验";
+}
+#page_nav li:nth-child(6) a:hover span:after{
+	content:"自我评价";
+}
+
+/**
+ * 基本信息
+ */
+#basic_info{
+    background-color: rgba(4,23,251,.3);    
+    overflow:hidden;
+}
+#basic_info .portrait{
+	width: 200px;
+	height: 200px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
+	border: 10px solid #9DF5E3;
+}
+#basic_info .name{
+	font-size: 50px;
+	color: #fff;
+}
+#basic_info .motto{
+	font-size: 30px;
+	font-family: "STXingkai","华文行楷";
+	color: #B8FFF0;
+	margin: 10px auto;
+}
+#basic_info .post{
+	color: #fff;
+	font-size: 32px;
+	margin: 10px auto;
+}
+#basic_info .phone{
+	color: #03AC89;
+	font-size: 25px;
+	line-height: 25px;
+}
+#basic_info .email{
+	text-align: center;
+}
+#basic_info .email .qfm_icon_email{
+	vertical-align: top;
+}
+#basic_info .email a{
+	color: #03AC89;
+	font-size: 25px;
+	line-height: 25px;
+}
+#basic_info .email a:hover{
+	color: #B5FB04;
+}
+#basic_info .name{}
+/**
+ * 项目经验
+ */
+#project{
+    /* background-color: rgba(255,255,0,.3); */
+    background-color: rgba(93,195,177,1);
+}
+#project{
+	
+}
+#project h1{
+	font-size: 50px;
+	margin-top: 0;
+	margin-bottom: 10px;
+}
+#project ul{
+	width: 100%;
+}
+#project li{
+	width: 45%;
+	margin: 1px 2.5%;
+	padding: 10px 50px;
+	float: left;
+	text-align: center;
+}
+#project .icon label{
+	display: inline-block;
+	width: 100px;
+	height: 100px;
+	line-height: 100px;
+	/* background-color: #9DF5E3; */
+	background-color: #40BBA2;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
+	
+}
+#project .qfm_icon{
+	vertical-align: middle;
+}
+#project .icon label:hover{
+	-moz-box-shadow: 0 0 20px #ccc; /* 老的 Firefox */
+	box-shadow: 0 0 20px #ccc;
+	border: 1px solid #40BBA2;
+	-webkit-animation: qfmRotate 300ms linear;
+	animation: qfmRotate 300ms linear;
+}
+#project .name a{
+	font-size: 30px;
+}
+#project .img{
+	width: 100%;
+	/* height: 50%; */
+	padding: 2px 4px;
+}
+#project img{
+	max-width: 100%;
+	max-height: 100%;
+}
+#project .website {
+	margin: 10px auto;
+}
+#project .website a{
+	color: #fff;
+	font-size: 30px;
+}
+#project .website a:hover{
+	color: #333;
+}
+/*展示能耗图片*/
+#showEnergy{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: yellow;
+	display: none;
+}
+#showEnergy .box{
+	width: 100%;
+	height: 100%;
+}
+#showEnergy ul{
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+#showEnergy li{
+	width: 50%;
+}
+/**
+ * 专业技能
+ */
+#skill{
+    background-color: rgba(0,128,0,.3);
+    background-image: url(../img/7.png);
+	background-repeat: no-repeat;
+	background-position: right center;
+    
+}
+#skill h1{
+	font-size: 50px;
+	margin-top: 0;
+	margin-bottom: 10px;
+}
+#skill .row{
+	padding: 20px 0;
+	text-align: center;
+}
+#skill label{
+	background-color: #096254;
+	color: #aee2d9;
+	border-radius: 3px;
+	display: inline-block;
+	padding: 2px 8px;
+	margin: 0 10px;
+	font-size: 18px;
+}
+/**
+ * 教育背景
+ */
+#education{
+    background-color: rgba(46,94,166,1);
+    
+	font-size: 20px;
+}
+#education .tableCell{
+	position: relative;	
+	display: table;
+}
+#education .content{
+	z-index: 1;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    margin: 0 auto;
+    background-image: url(../img/6.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+#education h1{
+	font-size: 50px;
+	margin-top: 0;
+	margin-bottom: 10px;
+}
+#education .university{
+	font-size: 30px;
+}
+#education .time{
+	font-size: 26px;
+}
+#education .major{
+	font-size: 30px;
+}
+#education .certificate{
+	font-size: 20px;
+}
+#education .university{}
+#education .draw_bg{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	/* background-color: red; */
+	z-index: 0;
+	overflow: hidden;
+}
+#education .draw_bg span{
+	display: block;
+	position: absolute;
+}
+
+/**
+ * 工作经历
+ */
+#workExper{
+	background-color: #26AADB;
+	background-image: url(../img/5.png);
+	background-repeat: no-repeat;
+	background-position: right center;
+	font-size: 20px;
+}
+#workExper p{
+	font-size: 30px;
+}
+/**
+ * 自我评价
+ */
+#evaluate{
+	
+	background-image: url(../img/8.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+
+	/* background: url(../img/8.JPG) left center no-repeat; */
+	background-size: auto 100%;
+	/*针对IE8的hack，目的是除掉之前background*/
+    background: none\9;
+    /*下一行为关键设置*/
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="../img/8.png",sizingMethod='scale');
+	background-color: rgba(113,248,116,1);
+}
+#evaluate p{
+	font-size: 18px;
+}
+#evaluate font{
+	color: #049508;
+	font-weight: bold;
+	padding: 0 5px;
+}
+#evaluate .free{
+	color: #049508;
+	font-weight: bold;
+}
+
